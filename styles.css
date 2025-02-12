@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+h1, h2, h3 {
+  color: #1a73e8;
+}
+
+.education h3 {
+  color: #333333;
+}
+
+.certifications h3 {
+  color: #333333;
+}
+
+a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto; 
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
