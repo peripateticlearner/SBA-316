@@ -1,35 +1,62 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  color: #333333;
-}
-
-h1, h2, h3 {
-  color: #1a73e8;
-}
-
-.education h3 {
-  color: #333333;
-}
-
-.certifications h3 {
-  color: #333333;
-}
-
-a {
-  color: #0a66c2;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .resume-container {
+  width: 80%;
   max-width: 800px;
-  margin: 0 auto; 
-  background: #ffffff;
+  margin: 20px auto;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  color: #222;
+}
+
+.contact-info a {
+  color: #0073b1;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .resume-container {
+  background: #333;
+  color: #ddd;
+}
+
+.dark-mode a {
+  color: #1e90ff;
+}
+
+/* Button Styling */
+#dark-mode-toggle {
+  margin: 10px;
+  padding: 10px 15px;
+  background: #0073b1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#dark-mode-toggle:hover {
+  background: #005580;
 }
