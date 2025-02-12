@@ -1,15 +1,19 @@
 # SBA 316: The Document Object Model  
 
-## What is this?  
-
-This project is a dynamic single-page web application that demonstrates the use of the Document Object Model (DOM) and Browser Object Model (BOM) to create an interactive user experience.  
+## Overview  
+This project is a **dynamic resume webpage** that utilizes the **Document Object Model (DOM)** and **Browser Object Model (BOM)** to create an interactive experience. Users can toggle section visibility, switch to dark mode, and submit a contact form with validation.  
 
 ## Features  
+- **DOM Manipulation:** Uses `getElementById`, `querySelector`, and event-driven updates.  
+- **Dynamic Content:** Toggle buttons to show/hide resume sections.  
+- **Dark Mode:** Saves user preference using `localStorage`.  
+- **Form Validation:** Ensures valid input using JavaScript.  
 
-- Selects and manipulates DOM elements using `getElementById`, `querySelector`, and parent-child relationships.  
-- Creates and appends new elements dynamically.  
-- Uses event listeners to handle user interactions.  
-- Implements form validation using both HTML attributes and JavaScript.  
-- Modifies content, styles, and attributes in response to user actions.  
-- Utilizes BOM properties for enhanced functionality.  
-- Built with a focus on user experience and interactivity.  
+## Technologies Used  
+- **HTML5**, **CSS3**, **JavaScript**  
+
+## How to Use  
+1. Open `index.html` in a browser.  
+2. Click **Toggle Dark Mode** to switch themes.  
+3. Use **Show/Hide** buttons to toggle sections.  
+4. Fill out and submit the **contact form** to test validation.  

@@ -1,75 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
 
-    <title>Ali Kirat Resume</title>
-  </head>
-  <body>
-    <button id="dark-mode-toggle">Toggle Dark Mode</button>
-    <section class="resume-container">
-      <!-- Header Section -->
-      <header>
-        <h1>Ali Kirat</h1>
-        <p class="title">Fullstack Developer</p>
-        <div class="contact-info">
-          <a href="mailto:ali.kirat1@gmail.com">ali.kirat1@gmail.com</a> | 
-          <a href="tel:">phone</a> | 
-          <a href="https://www.linkedin.com/in/ali-kirat/" target="_blank">LinkedIn</a> | 
-          <a href="https://github.com/peripateticlearner" target="_blank">GitHub</a> | 
-          <a href="https://peripateticlearner.github.io/github-repo-gallery/" target="_blank">Portfolio</a>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
 
-      <!-- Professional Summary Section -->
-      <section class="summary">
-        <h2>Professional Summary</h2>
-        <p>
-          Motivated and detail-oriented professional transitioning into Software
-          Engineering with a solid foundation in front-end and back-end
-          development, gained through the Software Engineering program at Per
-          Scholas.
-        </p>
-      </section>
+  <title>Ali Kirat Resume</title>
+</head>
 
-      <!-- Technical Skills Section -->
-      <section class="technical-skills">
-        <h2>Technical Skills</h2>
-        <ul>
-          <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js</li>
-          <li><strong>Backend:</strong> Node.js, Express.js, MongoDB</li>
-          <li><strong>Version Control:</strong> Git, GitHub</li>
-        </ul>
-      </section>
+<body>
+  <button id="darkModeToggle">Toggle Dark Mode</button>
+  <section class="resume-container">
+    <!-- Header Section -->
+    <header>
+      <h1>Ali Kirat</h1>
+      <p class="title">Fullstack Developer</p>
 
-      <!-- Experience Section -->
-      <section class="experience">
-        <h2>Experience</h2>
-        <div class="job">
-          <h3>Frontend Developer | Freelance</h3>
-          <p>May 2024 - Present</p>
-          <ul>
-            <li>Built and optimized responsive web applications.</li>
-            <li>Developed engaging user interfaces with React.js.</li>
-          </ul>
-        </div>
-      </section>
+    </header>
 
-      <!-- Projects Section -->
-      <section class="projects">
-        <h2>Projects</h2>
-        <div class="project">
+    <!-- Professional Summary Section -->
+    <section class="summary">
+      <h2>Professional Summary</h2>
+      <button class="toggle-btn" data-target="summary-content">Show/Hide</button>
+      <p id="summary-content">
+        Motivated and detail-oriented professional transitioning into Software Engineering with a solid foundation in
+        front-end and back-end
+        development, gained through self-learning and through the Software Engineering program at Per Scholas. Skilled
+        in building responsive web applications using
+        HTML5, CSS3, JavaScript, and React, with additional experience in Python and Git/GitHub for version control.
+        Demonstrates a strong
+        commitment to continuous learning, as evidenced by completed certifications in JavaScript, HTML, and Python.
+        Experienced in self-directed learning
+        and applying transferable skills from curriculum development, problem-solving, and mentoring to software
+        engineering. Adept at working collaboratively
+        to deliver creative, functional, and efficient solutions.
+      </p>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="technical-skills">
+      <h2>Technical Skills</h2>
+      <button class="toggle-btn" data-target="skills-content">Show/Hide</button>
+      <div id="skills-content"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; padding-left: 20px;">
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>MongoDB</span>
+        <span>Express.js</span>
+        <span>Node.js</span>
+        <span>Python</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>PHP</span>
+        <span>Git/GitHub</span>
+        <span>Web Development</span>
+        <span>UI/UX Design</span>
+        <span>Wireframing</span>
+        <span>Front-end Coding</span>
+        <span>Back-end Coding</span>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education</h2>
+      <button class="toggle-btn" data-target="education-content">Show/Hide</button>
+      <div id="education-content">
+        <h3>Per Scholas | Software Engineering | Remote | Expected Graduation April 2025</h3>
+        <h3>Claremont Graduate University | Master of Arts: Religion | Sep 2016</h3>
+        <h3>Zaytuna College | Bachelor of Arts: Liberal Arts | May 2015</h3>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+      <h2>Certifications</h2>
+      <button class="toggle-btn" data-target="certifications-content">Show/Hide</button>
+      <ul id="certifications-content" style="list-style-type: none; padding-left: 0;">
+        <li>Frontend Development | Skillcrush | December 2024</li>
+        <li>Learn JavaScript | Scrimba | December 2024</li>
+        <li>Learn HTML | Scrimba | September 2024</li>
+        <li>Variables, Data Types, and Lists in Python | Dataquest.io | January 2022</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <button class="toggle-btn" data-target="projects-content">Show/Hide</button>
+      <div id="projects-content">
+        <div class="project-card">
           <h3>GitHub Repo Gallery</h3>
           <p>
-            <a href="https://peripateticlearner.github.io/github-repo-gallery/" target="_blank">
-              View Project
-            </a>
+            <a href="https://peripateticlearner.github.io/github-repo-gallery/" target="_blank" class="project-link">🔗
+              View Project</a>
           </p>
+          <p><strong>Technologies Used:</strong></p>
+          <ul class="project-tech">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+          </ul>
         </div>
-      </section>
+      </div>
     </section>
-  </body>
+
+
+    <!-- Professional Experience Section -->
+    <section class="experience">
+      <h2>Professional Experience</h2>
+      <button class="toggle-btn" data-target="experience-content">Show/Hide</button>
+      <div id="experience-content" style="padding-left: 0;">
+        <div class="job">
+          <h3>Frontend Developer | Freelance | Los Angeles, CA | May 2024 - Present</h3>
+          <ul>
+            <li>Built and optimized responsive web applications using HTML5, CSS3, JavaScript, and React.js.</li>
+            <li>Designed and implemented web interfaces with a focus on user experience (UX), wireframing, typography,
+              and branding.</li>
+            <li>Practiced version control using Git and GitHub, organizing and managing code collaboratively.</li>
+            <li>Ensured accessibility through cross-browser compatibility and responsive design.</li>
+            <li>Worked on personal and portfolio projects to develop and apply front-end development skills and build a
+              professional web presence.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Private Teacher | Self-Employed | Various Locations | Aug 2013 - Current</h3>
+          <ul>
+            <li>Developed a number of curriculums to provide students with an ample understanding of the subject matter
+              through interactive learning.</li>
+            <li>Catered coursework to reflect student demographics.</li>
+            <li>Subjects include and are not limited to English, philosophy, mathematics, science, Socratic logic, world
+              religions, comparative theology, rhetoric, and history.</li>
+            <li>Utilized Microsoft Word, Microsoft PowerPoint, and Microsoft Outlook for curriculum design, lesson
+              delivery, and student communication.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Business Consultant | Self-employed | Los Angeles, CA | Feb 2020 - Dec 2022</h3>
+          <h4>Center for Global Muslim Life - San Diego, CA (Jul 2020 - Jul 2022)</h4>
+          <ul>
+            <li>Supported a non-profit organization in crafting impactful streaming events and successful fundraising
+              strategies.</li>
+            <li>Collaborated with the team to develop engaging content, ensure smooth event execution, and drive donor
+              engagement.</li>
+            <li>Implemented online fundraising campaigns utilizing social media and email marketing for broader reach.
+            </li>
+            <li>Monitored and analyzed campaign performance, making data-driven adjustments for optimization.</li>
+            <li>Coordinated volunteers, managed logistics, and ensured fundraising success.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Your Name" required>
+
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" placeholder="Your Email" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </section>
+</body>
+
 </html>

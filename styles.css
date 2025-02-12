@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -8,27 +9,13 @@ body {
 }
 
 .resume-container {
-  width: 80%;
+  width: 90%;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   background: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-}
-
-h1 {
-  color: #222;
-}
-
-.contact-info a {
-  color: #0073b1;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
 }
 
 /* Dark Mode */
@@ -39,24 +26,142 @@ h1 {
 
 .dark-mode .resume-container {
   background: #333;
-  color: #ddd;
+  color: #fff;
 }
 
-.dark-mode a {
-  color: #1e90ff;
+/* Header */
+header h1 {
+  margin: 10px 0;
+  font-size: 26px;
 }
 
-/* Button Styling */
-#dark-mode-toggle {
+header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Section Titles */
+h2 {
+  border-bottom: 2px solid #0073b1;
+  padding-bottom: 5px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* Toggle Buttons */
+.toggle-btn {
   margin: 10px;
-  padding: 10px 15px;
+  padding: 8px 12px;
   background: #0073b1;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
 }
 
-#dark-mode-toggle:hover {
+.toggle-btn:hover {
   background: #005580;
+}
+
+/* Skills Grid */
+#skills-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Professional Experience and Other Lists */
+ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Ensure project titles are visible in dark mode */
+.dark-mode .project-card h3 {
+  color: #fff;
+}
+
+/* Project section styling */
+.project-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px auto;
+  max-width: 400px;
+}
+
+.dark-mode .project-card {
+  background: #444; 
+  color: #fff; 
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 12px;
+  background: #0073b1;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.project-link:hover {
+  background: #005580;
+}
+
+.project-tech {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.project-tech li {
+  display: inline-block;
+  background: #0073b1;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input {
+  display: block;
+  width: 80%;
+  padding: 8px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: green;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background: darkgreen;
 }
